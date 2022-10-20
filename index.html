@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custon CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="ctn">
+        <button class="btn">Again!</button>
+        <p class="ctn__text">(Between 1 and 20)</p>
+      </div>
+      <h1 class="heading">Guess My Number!</h1>
+      <div class="guess">?</div>
+    </header>
+    <main class="main">
+      <form class="form" action="#">
+        <input type="number" name="#" id="#" />
+        <button class="btn">Check!</button>
+      </form>
+      <section class="ctn-start">
+        <h2 class="ctn-start__heading">Start guessing...</h2>
+        <h3 class="ctn-start__score"><span>20</span></h3>
+        <h3 class="ctn-start__highscore"><span>0</span></h3>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
