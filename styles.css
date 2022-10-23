@@ -8,6 +8,7 @@ body {
   font-family: 'Press Start 2P', cursive;
   background-color: #222;
   color: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .header {
@@ -42,7 +43,7 @@ body {
   font-size: 3.5rem;
 }
 
-.guess {
+.number {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -74,7 +75,7 @@ body {
   align-items: center;
 }
 
-.form input {
+.guess {
   width: 15rem;
   margin-bottom: 2rem;
   padding: 1.9rem;
@@ -94,15 +95,76 @@ body {
   flex-direction: column;
 }
 
-.ctn-start__heading {
+.message {
   margin-bottom: 4rem;
   font-weight: lighter;
 }
 
-.ctn-start__score::before {
+.score::before {
   content: '💯 Score: ';
 }
 
-.ctn-start__highscore::before {
+.highscore::before {
   content: '🥇 Highscore: ';
+}
+
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .number {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .header {
+    margin-bottom: 6rem;
+  }
+
+  .ctn {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0.5rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    margin-bottom: 2rem;
+  }
+
+  .guess {
+    width: 12rem;
+    padding: 1.5;
+    font-size: 3rem;
+  }
 }
