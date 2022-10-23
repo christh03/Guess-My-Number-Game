@@ -121,6 +121,7 @@ body {
 @media screen and (max-width: 759px) {
   .header {
     margin-bottom: 6rem;
+    height: 45vh;
   }
 
   .ctn {
