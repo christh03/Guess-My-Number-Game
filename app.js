@@ -4,7 +4,6 @@ const again = document.querySelectorAll('.btn')[0];
 const check = document.querySelectorAll('.btn')[1];
 const randomNumber = () => Math.round(Math.random() * 20);
 let secretNunber = randomNumber();
-
 let score = Number(document.querySelector('.score').textContent);
 let arr = [];
 
@@ -34,8 +33,9 @@ check.addEventListener('click', () => {
       document.querySelector('.highscore').textContent = max;
     } else {
       // when guess is too high or too low
-      let range = guess > secretNunber ? '📈 Too high' : '📉 Too low';
-      document.querySelector('.message').textContent = `${range}`;
+      document.querySelector('.message').textContent = `${
+        guess > secretNunber ? '📈 Too high' : '📉 Too low'
+      }`;
 
       //  when you lose the score decreases
       if (score > 1) {
